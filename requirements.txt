@@ -1,9 +1,8 @@
 streamlit==1.38.0
-sentence-transformers==3.0.1
+groq
+python-dotenv
 faiss-cpu
-groq==0.9.0
-pypdf==4.3.1
-python-dotenv==1.0.1
-numpy==1.26.4
-httpx<0.28
-httpcore==1.0.5
+sentence-transformers
+pypdf
+scikit-learn
+numpy
