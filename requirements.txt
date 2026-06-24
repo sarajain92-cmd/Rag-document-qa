@@ -1,9 +1,25 @@
-streamlit
+streamlit==1.38.0
+
+# LLM
+groq==0.4.2
+python-dotenv
+
+# Embeddings
 sentence-transformers==2.6.1
-huggingface-hub==0.20.3
 transformers==4.38.2
+huggingface-hub==0.20.3
+
+# Torch stack (CPU safe)
 torch==2.2.2
-torchvision
-faiss-cpu
+torchvision==0.17.2
+
+# Vector DB
+faiss-cpu==1.7.4
+
+# Fix NumPy issue
+numpy==1.26.4
+scipy==1.11.4
+
+# Utils
 pypdf
-numpy
+scikit-learn
