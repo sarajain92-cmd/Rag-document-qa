@@ -25,3 +25,10 @@ def generate_answer(question: str,
  max_tokens=500,
  )
  return response.choices[0].message.content
+import streamlit as st
+from groq import Groq
+api_key = st.secrets["GROQ_API_KEY"]
+
+client = Groq(api_key=api_key)
+if not api_key:
+    raise ValueError("GROQ_API_KEY missing in secrets")
